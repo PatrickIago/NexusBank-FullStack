@@ -1,0 +1,1053 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Gerenciamento de usuários",
+    "contact": {
+      "name": "Patrick",
+      "email": "Mendespatrick720@gmail.com"
+    },
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/enderecos": {
+      "post": {
+        "tags": [
+          "Endereco"
+        ],
+        "summary": "Cria um novo endereço",
+        "description": "<b>Observações:</b>\r\n\r\n\r\n             - O endereço está sempre vinculado a um usuário\r\n             - O sistema é exclusivo para o Brasil\r\n            \r\n             \r\n\r\n<b>Exemplo de request:</b>\r\n            \r\n                 POST /api/enderecos\r\n                 {\r\n                    \"userId\": 0,\r\n                    \"rua\": \"Av Brasil\",\r\n                    \"numero\": \"100\",\r\n                    \"cidade\": \"Porto Alegre\",\r\n                    \"estado\": \"RS\"\r\n                 }",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateEnderecoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateEnderecoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateEnderecoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Endereço criado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnderecoDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnderecoDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnderecoDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Erro de validação",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Endereco"
+        ],
+        "summary": "Atualiza um endereço existente",
+        "description": "<b>Exemplo de request:</b>\r\n            \r\n                 PUT /api/enderecos\r\n                 {\r\n                    \"id\": 1,\r\n                    \"rua\": \"Av Brasil\",\r\n                    \"numero\": \"200\",\r\n                    \"cidade\": \"Porto Alegre\",\r\n                    \"estado\": \"RS\"\r\n                 }",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateEnderecoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateEnderecoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateEnderecoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Endereço atualizado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnderecoDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnderecoDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnderecoDto"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Endereço não encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/enderecos/{id}": {
+      "get": {
+        "tags": [
+          "Endereco"
+        ],
+        "summary": "Retorna um endereço pelo ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID do endereço",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Endereço encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnderecoDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnderecoDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnderecoDto"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Endereço não encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Endereco"
+        ],
+        "summary": "Remove um endereço pelo ID",
+        "description": "Exemplo:\r\n            \r\n    DELETE /api/enderecos/1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID do endereço",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Endereço removido com sucesso"
+          },
+          "404": {
+            "description": "Endereço não encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/suporte/exportar-usuarios-por-cidade": {
+      "get": {
+        "tags": [
+          "Suporte"
+        ],
+        "summary": "Retorna todos os usuários que moram em uma determinada cidade ou estado",
+        "parameters": [
+          {
+            "name": "endereco",
+            "in": "query",
+            "description": "Nome do endereço (Estado/Cidade)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de usuários encontrados"
+          },
+          "404": {
+            "description": "Nenhum usuário encontrado"
+          }
+        }
+      }
+    },
+    "/api/suporte/transacoes": {
+      "get": {
+        "tags": [
+          "Suporte"
+        ],
+        "summary": "Retorna as transações de um usuario pelo documento",
+        "parameters": [
+          {
+            "name": "documento",
+            "in": "query",
+            "description": "Documento do usuario (CPF/CNPJ)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Transações"
+          }
+        }
+      }
+    },
+    "/api/suporte/Obter-saldo-por-documento": {
+      "get": {
+        "tags": [
+          "Suporte"
+        ],
+        "summary": "Retorna o saldo de um usuario pelo documento",
+        "parameters": [
+          {
+            "name": "documento",
+            "in": "query",
+            "description": "Documento do usuario (CPF/CNPJ)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Saldo disponivel"
+          }
+        }
+      }
+    },
+    "/api/suporte/Obter-extrato": {
+      "get": {
+        "tags": [
+          "Suporte"
+        ],
+        "summary": "Retorna o extrato de uma transação",
+        "parameters": [
+          {
+            "name": "transacaoId",
+            "in": "query",
+            "description": "Id da transação",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Transação"
+          }
+        }
+      }
+    },
+    "/api/suporte/comprovante-pdf": {
+      "get": {
+        "tags": [
+          "Suporte"
+        ],
+        "summary": "Exporta o extrato de uma transação em PDF",
+        "parameters": [
+          {
+            "name": "transacaoId",
+            "in": "query",
+            "description": "Id da transação",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Transação"
+          }
+        }
+      }
+    },
+    "/api/transferencias": {
+      "post": {
+        "tags": [
+          "Transferencias"
+        ],
+        "summary": "Realiza uma transferência entre usuários",
+        "description": "<b>Observações:</b>\r\n\r\n\r\n             - O valor deve ser maior que zero\r\n             - Não é permitido transferir para si mesmo\r\n             - A chave de idempotência evita duplicidade\r\n            \r\n             \r\n\r\n<b>Exemplo de request:</b>\r\n            \r\n                 POST /api/transferencias\r\n                 {\r\n                    \"usuarioRemetenteId\": 1,\r\n                    \"usuarioDestinatarioId\": 2,\r\n                    \"valor\": 150.00,\r\n                    \"chaveIdempotencia\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\r\n                 }",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransferenciaRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransferenciaRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransferenciaRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Transferência realizada com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransferenciaResponseDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransferenciaResponseDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransferenciaResponseDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Erro de validação",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "summary": "Cria um novo usuário",
+        "description": "Exemplo de request:\r\n            \r\n    POST /api/users\r\n    {\r\n       \"name\": \"teste\",\r\n       \"email\": \"teste@email.com\"\r\n       \"idade\": 18\r\n       \"celular\": \"51980578892\"\r\n       \"tipoPessoa\": \"pessoafisica\"\r\n    }",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateUserDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateUserDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateUserDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Usuário criado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Erro de validação",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "summary": "Retorna a lista de usuários",
+        "responses": {
+          "200": {
+            "description": "Lista retornada com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users/{id}": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "summary": "Retorna um usuário pelo ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID do usuário",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuário encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Usuário não encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "summary": "Atualiza os dados de um usuário",
+        "description": "Exemplo de request:\r\n            \r\n    PUT /api/users\r\n    {\r\n       \"id\": 1,\r\n       \"name\": \"teste atualizado\",\r\n       \"email\": \"teste@email.com\",\r\n       \"idade\": 19,\r\n       \"celular\": \"51980578892\",\r\n       \"tipoPessoa\": \"pessoafisica\"\r\n    }",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Usuário atualizado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserDto"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Usuário não encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Usuario"
+        ],
+        "summary": "Remove um usuário pelo ID",
+        "description": "Para remover um usuário, é obrigatório informar o ID na rota.\r\n            \r\nExemplo de request:\r\n            \r\n    DELETE /api/users/1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID do usuário que será removido",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Usuário removido com sucesso"
+          },
+          "404": {
+            "description": "Usuário não encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/users/paged": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "summary": "Retorna a lista de usuários por paginação",
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista retornada com sucesso"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateEnderecoDto": {
+        "type": "object",
+        "properties": {
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rua": {
+            "type": "string",
+            "nullable": true
+          },
+          "numero": {
+            "type": "string",
+            "nullable": true
+          },
+          "cidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateUserDto": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "description": "Nome completo do usuário",
+            "nullable": true
+          },
+          "idade": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "celular": {
+            "type": "string",
+            "nullable": true
+          },
+          "documento": {
+            "type": "string",
+            "description": "Documento conforme o TipoPessoa:\r\nCPF → 11 dígitos\r\nCNPJ → 14 dígitos",
+            "nullable": true
+          },
+          "tipoPessoa": {
+            "$ref": "#/components/schemas/TipoPessoa"
+          },
+          "endereco": {
+            "$ref": "#/components/schemas/CreateEnderecoDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EnderecoDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rua": {
+            "type": "string",
+            "nullable": true
+          },
+          "numero": {
+            "type": "string",
+            "nullable": true
+          },
+          "cidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
+      "TipoPessoa": {
+        "enum": [
+          "PessoaFisica",
+          "PessoaJuridica"
+        ],
+        "type": "string"
+      },
+      "TransferenciaRequestDto": {
+        "type": "object",
+        "properties": {
+          "usuarioRemetenteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioDestinatarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "valor": {
+            "type": "number",
+            "format": "double"
+          },
+          "chaveIdempotencia": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransferenciaResponseDto": {
+        "type": "object",
+        "properties": {
+          "transacaoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "valor": {
+            "type": "number",
+            "format": "double"
+          },
+          "destinatario": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataHora": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateEnderecoDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rua": {
+            "type": "string",
+            "nullable": true
+          },
+          "numero": {
+            "type": "string",
+            "nullable": true
+          },
+          "cidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateUserDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "idade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "celular": {
+            "type": "string",
+            "nullable": true
+          },
+          "documento": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoPessoa": {
+            "$ref": "#/components/schemas/TipoPessoa"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "idade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "celular": {
+            "type": "string",
+            "nullable": true
+          },
+          "documento": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoPessoa": {
+            "$ref": "#/components/schemas/TipoPessoa"
+          },
+          "endereco": {
+            "$ref": "#/components/schemas/EnderecoDto"
+          },
+          "saldo": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

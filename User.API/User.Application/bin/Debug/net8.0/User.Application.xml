@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>User.Application</name>
+    </assembly>
+    <members>
+        <member name="P:User.Application.Dtos.UserDtos.CreateUserDto.Nome">
+            <summary>
+            Nome completo do usuário
+            </summary>
+        </member>
+        <member name="P:User.Application.Dtos.UserDtos.CreateUserDto.Documento">
+            <summary>
+            Documento conforme o TipoPessoa:
+            CPF → 11 dígitos
+            CNPJ → 14 dígitos
+            </summary>
+        </member>
+        <member name="P:User.Application.Dtos.UserDtos.CreateUserDto.TipoPessoa">
+            <summary>
+            Tipo da pessoa:
+            PessoaFisica = CPF
+            PessoaJuridica = CNPJ
+            </summary>
+        </member>
+        <member name="P:User.Application.Dtos.UserDtos.CreateUserDto.Endereco">
+            <summary>
+            Endereço do usuário
+            </summary>
+        </member>
+    </members>
+</doc>

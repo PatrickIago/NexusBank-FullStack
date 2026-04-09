@@ -1,0 +1,868 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.infra\\services\\suporterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|solutionrelative:user.infra\\services\\suporterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.infra\\services\\transferenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|solutionrelative:user.infra\\services\\transferenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\dtos\\carteiradto\\saldodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\dtos\\carteiradto\\saldodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\interfaces\\isuporterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\interfaces\\isuporterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.presentation\\controllers\\suportecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|solutionrelative:user.presentation\\controllers\\suportecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\dtos\\transferenciasdto\\transferenciaresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\dtos\\transferenciasdto\\transferenciaresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\mapping\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\mapping\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.domain\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|solutionrelative:user.domain\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.infra\\services\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|solutionrelative:user.infra\\services\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\dtos\\userdtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\dtos\\userdtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\dtos\\userdtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\dtos\\userdtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\dtos\\userdtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\dtos\\userdtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\dtos\\transferenciasdto\\transferenciarequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\dtos\\transferenciasdto\\transferenciarequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.domain\\entities\\transacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|solutionrelative:user.domain\\entities\\transacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.domain\\entities\\carteira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|solutionrelative:user.domain\\entities\\carteira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\interfaces\\itransferenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\interfaces\\itransferenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.presentation\\controllers\\transferenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|solutionrelative:user.presentation\\controllers\\transferenciascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|solutionrelative:user.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.presentation\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|solutionrelative:user.presentation\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.presentation\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|solutionrelative:user.presentation\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.domain\\enuns\\tipopessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|solutionrelative:user.domain\\enuns\\tipopessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\validators\\uservalidation\\updateuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\validators\\uservalidation\\updateuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\validators\\uservalidation\\documentovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\validators\\uservalidation\\documentovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\validators\\uservalidation\\createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\validators\\uservalidation\\createuservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\interfaces\\ienderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\interfaces\\ienderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|solutionrelative:user.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.infra\\migrations\\20260224223235_addintregacaopagamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|solutionrelative:user.infra\\migrations\\20260224223235_addintregacaopagamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.infra\\migrations\\20260202231121_addtipopessoaanddocumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|solutionrelative:user.infra\\migrations\\20260202231121_addtipopessoaanddocumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.presentation\\user.presentation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|solutionrelative:user.presentation\\user.presentation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.infra\\services\\enderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|solutionrelative:user.infra\\services\\enderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.infra\\services\\comprovantepdfgeneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|solutionrelative:user.infra\\services\\comprovantepdfgeneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\helpers\\csvhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\helpers\\csvhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\dtos\\enderecodtos\\enderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\dtos\\enderecodtos\\enderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.domain\\entities\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|solutionrelative:user.domain\\entities\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\dtos\\enderecodtos\\createenderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\dtos\\enderecodtos\\createenderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\interfaces\\ipdfgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\interfaces\\ipdfgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.presentation\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|solutionrelative:user.presentation\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\dtos\\transferenciasdto\\comprovantetransferenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\dtos\\transferenciasdto\\comprovantetransferenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.infra\\data\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|solutionrelative:user.infra\\data\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\dtos\\enderecodtos\\updateenderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\dtos\\enderecodtos\\updateenderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.infra\\migrations\\20260304215107_ajusteendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|solutionrelative:user.infra\\migrations\\20260304215107_ajusteendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\shared\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\shared\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\shared\\paginationparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\shared\\paginationparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\validators\\transferenciavalidations\\transferenciavalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\validators\\transferenciavalidations\\transferenciavalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.domain\\enuns\\statustransacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|solutionrelative:user.domain\\enuns\\statustransacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.domain\\user.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C5689DD3-A651-7957-B320-292600E26DDA}|User.Domain\\User.Domain.csproj|solutionrelative:user.domain\\user.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.application\\user.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8C6201C7-A00F-1A9E-CE73-E5B4501CF123}|User.Application\\User.Application.csproj|solutionrelative:user.application\\user.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.presentation\\user.presentation.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|solutionrelative:user.presentation\\user.presentation.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.presentation\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA52812F-4C51-0FDC-665B-6FFEF92C4451}|User.Presentation\\User.Presentation.csproj|solutionrelative:user.presentation\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.infra\\migrations\\20260120215203_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|solutionrelative:user.infra\\migrations\\20260120215203_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|c:\\users\\pichau\\documents\\patrickdocs\\projetos\\user.api\\user.infra\\migrations\\20260408024233_addmudancas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42284B89-5B1E-0057-4FFB-A8584BBB4442}|User.Infra\\User.Infra.csproj|solutionrelative:user.infra\\migrations\\20260408024233_addmudancas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Mapping\\UserProfile.cs",
+              "RelativeDocumentMoniker": "User.Application\\Mapping\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Mapping\\UserProfile.cs",
+              "RelativeToolTip": "User.Application\\Mapping\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T21:31:00.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SuporteController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Controllers\\SuporteController.cs",
+              "RelativeDocumentMoniker": "User.Presentation\\Controllers\\SuporteController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Controllers\\SuporteController.cs",
+              "RelativeToolTip": "User.Presentation\\Controllers\\SuporteController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAUwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T22:39:37.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SuporteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Services\\SuporteRepository.cs",
+              "RelativeDocumentMoniker": "User.Infra\\Services\\SuporteRepository.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Services\\SuporteRepository.cs",
+              "RelativeToolTip": "User.Infra\\Services\\SuporteRepository.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwG8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T22:37:34.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransferenciaResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\TransferenciasDto\\TransferenciaResponseDto.cs",
+              "RelativeDocumentMoniker": "User.Application\\Dtos\\TransferenciasDto\\TransferenciaResponseDto.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\TransferenciasDto\\TransferenciaResponseDto.cs",
+              "RelativeToolTip": "User.Application\\Dtos\\TransferenciasDto\\TransferenciaResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T22:18:27.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ISuporteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Interfaces\\ISuporteRepository.cs",
+              "RelativeDocumentMoniker": "User.Application\\Interfaces\\ISuporteRepository.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Interfaces\\ISuporteRepository.cs",
+              "RelativeToolTip": "User.Application\\Interfaces\\ISuporteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T22:36:06.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SaldoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\CarteiraDto\\SaldoDto.cs",
+              "RelativeDocumentMoniker": "User.Application\\Dtos\\CarteiraDto\\SaldoDto.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\CarteiraDto\\SaldoDto.cs",
+              "RelativeToolTip": "User.Application\\Dtos\\CarteiraDto\\SaldoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T21:13:25.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransferenciaService.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Services\\TransferenciaService.cs",
+              "RelativeDocumentMoniker": "User.Infra\\Services\\TransferenciaService.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Services\\TransferenciaService.cs",
+              "RelativeToolTip": "User.Infra\\Services\\TransferenciaService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T22:41:45.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "User.Domain\\Entities\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Entities\\Usuario.cs",
+              "RelativeToolTip": "User.Domain\\Entities\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T23:21:15.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Services\\UserRepository.cs",
+              "RelativeDocumentMoniker": "User.Infra\\Services\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Services\\UserRepository.cs",
+              "RelativeToolTip": "User.Infra\\Services\\UserRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwC0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T21:23:37.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\UserDtos\\UserDto.cs",
+              "RelativeDocumentMoniker": "User.Application\\Dtos\\UserDtos\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\UserDtos\\UserDto.cs",
+              "RelativeToolTip": "User.Application\\Dtos\\UserDtos\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T21:34:38.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\UserDtos\\UpdateUserDto.cs",
+              "RelativeDocumentMoniker": "User.Application\\Dtos\\UserDtos\\UpdateUserDto.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\UserDtos\\UpdateUserDto.cs",
+              "RelativeToolTip": "User.Application\\Dtos\\UserDtos\\UpdateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T21:34:00.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\UserDtos\\CreateUserDto.cs",
+              "RelativeDocumentMoniker": "User.Application\\Dtos\\UserDtos\\CreateUserDto.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\UserDtos\\CreateUserDto.cs",
+              "RelativeToolTip": "User.Application\\Dtos\\UserDtos\\CreateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T21:33:26.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TransferenciaRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\TransferenciasDto\\TransferenciaRequestDto.cs",
+              "RelativeDocumentMoniker": "User.Application\\Dtos\\TransferenciasDto\\TransferenciaRequestDto.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\TransferenciasDto\\TransferenciaRequestDto.cs",
+              "RelativeToolTip": "User.Application\\Dtos\\TransferenciasDto\\TransferenciaRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T22:44:36.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Transacao.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Entities\\Transacao.cs",
+              "RelativeDocumentMoniker": "User.Domain\\Entities\\Transacao.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Entities\\Transacao.cs",
+              "RelativeToolTip": "User.Domain\\Entities\\Transacao.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA3wCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T22:23:45.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Carteira.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Entities\\Carteira.cs",
+              "RelativeDocumentMoniker": "User.Domain\\Entities\\Carteira.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Entities\\Carteira.cs",
+              "RelativeToolTip": "User.Domain\\Entities\\Carteira.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T22:18:13.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ITransferenciaService.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Interfaces\\ITransferenciaService.cs",
+              "RelativeDocumentMoniker": "User.Application\\Interfaces\\ITransferenciaService.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Interfaces\\ITransferenciaService.cs",
+              "RelativeToolTip": "User.Application\\Interfaces\\ITransferenciaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T22:40:29.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TransferenciasController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Controllers\\TransferenciasController.cs",
+              "RelativeDocumentMoniker": "User.Presentation\\Controllers\\TransferenciasController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Controllers\\TransferenciasController.cs",
+              "RelativeToolTip": "User.Presentation\\Controllers\\TransferenciasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T22:43:44.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "User.Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Program.cs",
+              "RelativeToolTip": "User.Presentation\\Program.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAADgv3UAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T21:26:24.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EnderecoController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Controllers\\EnderecoController.cs",
+              "RelativeDocumentMoniker": "User.Presentation\\Controllers\\EnderecoController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Controllers\\EnderecoController.cs",
+              "RelativeToolTip": "User.Presentation\\Controllers\\EnderecoController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAIwD4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T21:43:09.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DocumentoValidation.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Validators\\UserValidation\\DocumentoValidation.cs",
+              "RelativeDocumentMoniker": "User.Application\\Validators\\UserValidation\\DocumentoValidation.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Validators\\UserValidation\\DocumentoValidation.cs",
+              "RelativeToolTip": "User.Application\\Validators\\UserValidation\\DocumentoValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T22:58:25.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CreateUserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Validators\\UserValidation\\CreateUserValidator.cs",
+              "RelativeDocumentMoniker": "User.Application\\Validators\\UserValidation\\CreateUserValidator.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Validators\\UserValidation\\CreateUserValidator.cs",
+              "RelativeToolTip": "User.Application\\Validators\\UserValidation\\CreateUserValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T21:29:57.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UpdateUserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Validators\\UserValidation\\UpdateUserValidator.cs",
+              "RelativeDocumentMoniker": "User.Application\\Validators\\UserValidation\\UpdateUserValidator.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Validators\\UserValidation\\UpdateUserValidator.cs",
+              "RelativeToolTip": "User.Application\\Validators\\UserValidation\\UpdateUserValidator.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T21:17:58.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "User.Presentation\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "User.Presentation\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAADwv4cAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T21:45:27.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TipoPessoa.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Enuns\\TipoPessoa.cs",
+              "RelativeDocumentMoniker": "User.Domain\\Enuns\\TipoPessoa.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Enuns\\TipoPessoa.cs",
+              "RelativeToolTip": "User.Domain\\Enuns\\TipoPessoa.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T22:53:03.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "User.Application\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "User.Application\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T21:20:54.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "User.Presentation\\appsettings.json",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\appsettings.json",
+              "RelativeToolTip": "User.Presentation\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-08T01:31:25.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IEnderecoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Interfaces\\IEnderecoRepository.cs",
+              "RelativeDocumentMoniker": "User.Application\\Interfaces\\IEnderecoRepository.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Interfaces\\IEnderecoRepository.cs",
+              "RelativeToolTip": "User.Application\\Interfaces\\IEnderecoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T21:39:38.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "20260408024233_addmudancas.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Migrations\\20260408024233_addmudancas.cs",
+              "RelativeDocumentMoniker": "User.Infra\\Migrations\\20260408024233_addmudancas.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Migrations\\20260408024233_addmudancas.cs",
+              "RelativeToolTip": "User.Infra\\Migrations\\20260408024233_addmudancas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T02:42:33.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20260224223235_AddIntregacaoPagamentos.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Migrations\\20260224223235_AddIntregacaoPagamentos.cs",
+              "RelativeDocumentMoniker": "User.Infra\\Migrations\\20260224223235_AddIntregacaoPagamentos.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Migrations\\20260224223235_AddIntregacaoPagamentos.cs",
+              "RelativeToolTip": "User.Infra\\Migrations\\20260224223235_AddIntregacaoPagamentos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T22:32:35.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "User.Presentation.csproj",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\User.Presentation.csproj",
+              "RelativeDocumentMoniker": "User.Presentation\\User.Presentation.csproj",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\User.Presentation.csproj",
+              "RelativeToolTip": "User.Presentation\\User.Presentation.csproj",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvyUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-02T23:35:34.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20260202231121_AddTipoPessoaAndDocumento.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Migrations\\20260202231121_AddTipoPessoaAndDocumento.cs",
+              "RelativeDocumentMoniker": "User.Infra\\Migrations\\20260202231121_AddTipoPessoaAndDocumento.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Migrations\\20260202231121_AddTipoPessoaAndDocumento.cs",
+              "RelativeToolTip": "User.Infra\\Migrations\\20260202231121_AddTipoPessoaAndDocumento.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T23:11:21.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ComprovantePdfGeneratorService.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Services\\ComprovantePdfGeneratorService.cs",
+              "RelativeDocumentMoniker": "User.Infra\\Services\\ComprovantePdfGeneratorService.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Services\\ComprovantePdfGeneratorService.cs",
+              "RelativeToolTip": "User.Infra\\Services\\ComprovantePdfGeneratorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T21:53:42.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EnderecoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Services\\EnderecoRepository.cs",
+              "RelativeDocumentMoniker": "User.Infra\\Services\\EnderecoRepository.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Services\\EnderecoRepository.cs",
+              "RelativeToolTip": "User.Infra\\Services\\EnderecoRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T21:41:08.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CsvHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Helpers\\CsvHelper.cs",
+              "RelativeDocumentMoniker": "User.Application\\Helpers\\CsvHelper.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Helpers\\CsvHelper.cs",
+              "RelativeToolTip": "User.Application\\Helpers\\CsvHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T22:44:59.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "EnderecoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\EnderecoDtos\\EnderecoDto.cs",
+              "RelativeDocumentMoniker": "User.Application\\Dtos\\EnderecoDtos\\EnderecoDto.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\EnderecoDtos\\EnderecoDto.cs",
+              "RelativeToolTip": "User.Application\\Dtos\\EnderecoDtos\\EnderecoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T21:24:51.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Endereco.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Entities\\Endereco.cs",
+              "RelativeDocumentMoniker": "User.Domain\\Entities\\Endereco.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Entities\\Endereco.cs",
+              "RelativeToolTip": "User.Domain\\Entities\\Endereco.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T21:20:48.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CreateEnderecoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\EnderecoDtos\\CreateEnderecoDto.cs",
+              "RelativeDocumentMoniker": "User.Application\\Dtos\\EnderecoDtos\\CreateEnderecoDto.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\EnderecoDtos\\CreateEnderecoDto.cs",
+              "RelativeToolTip": "User.Application\\Dtos\\EnderecoDtos\\CreateEnderecoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T21:29:10.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IPdfGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Interfaces\\IPdfGenerator.cs",
+              "RelativeDocumentMoniker": "User.Application\\Interfaces\\IPdfGenerator.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Interfaces\\IPdfGenerator.cs",
+              "RelativeToolTip": "User.Application\\Interfaces\\IPdfGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T21:53:12.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "User.Presentation\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "User.Presentation\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAASwA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T21:39:02.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ComprovanteTransferenciaDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\TransferenciasDto\\ComprovanteTransferenciaDto.cs",
+              "RelativeDocumentMoniker": "User.Application\\Dtos\\TransferenciasDto\\ComprovanteTransferenciaDto.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\TransferenciasDto\\ComprovanteTransferenciaDto.cs",
+              "RelativeToolTip": "User.Application\\Dtos\\TransferenciasDto\\ComprovanteTransferenciaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T21:26:35.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Data\\UserDbContext.cs",
+              "RelativeDocumentMoniker": "User.Infra\\Data\\UserDbContext.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Data\\UserDbContext.cs",
+              "RelativeToolTip": "User.Infra\\Data\\UserDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA0wA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T21:24:24.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UpdateEnderecoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\EnderecoDtos\\UpdateEnderecoDto.cs",
+              "RelativeDocumentMoniker": "User.Application\\Dtos\\EnderecoDtos\\UpdateEnderecoDto.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Dtos\\EnderecoDtos\\UpdateEnderecoDto.cs",
+              "RelativeToolTip": "User.Application\\Dtos\\EnderecoDtos\\UpdateEnderecoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T21:29:37.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20260304215107_ajusteEndereco.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Migrations\\20260304215107_ajusteEndereco.cs",
+              "RelativeDocumentMoniker": "User.Infra\\Migrations\\20260304215107_ajusteEndereco.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Migrations\\20260304215107_ajusteEndereco.cs",
+              "RelativeToolTip": "User.Infra\\Migrations\\20260304215107_ajusteEndereco.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T21:51:08.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Shared\\PagedResult.cs",
+              "RelativeDocumentMoniker": "User.Application\\Shared\\PagedResult.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Shared\\PagedResult.cs",
+              "RelativeToolTip": "User.Application\\Shared\\PagedResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T23:02:32.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PaginationParams.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Shared\\PaginationParams.cs",
+              "RelativeDocumentMoniker": "User.Application\\Shared\\PaginationParams.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Shared\\PaginationParams.cs",
+              "RelativeToolTip": "User.Application\\Shared\\PaginationParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T23:02:53.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "TransferenciaValidation.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Validators\\TransferenciaValidations\\TransferenciaValidation.cs",
+              "RelativeDocumentMoniker": "User.Application\\Validators\\TransferenciaValidations\\TransferenciaValidation.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\Validators\\TransferenciaValidations\\TransferenciaValidation.cs",
+              "RelativeToolTip": "User.Application\\Validators\\TransferenciaValidations\\TransferenciaValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T21:30:44.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "StatusTransacao.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Enuns\\StatusTransacao.cs",
+              "RelativeDocumentMoniker": "User.Domain\\Enuns\\StatusTransacao.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\Enuns\\StatusTransacao.cs",
+              "RelativeToolTip": "User.Domain\\Enuns\\StatusTransacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T22:22:36.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "User.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\User.Domain.csproj",
+              "RelativeDocumentMoniker": "User.Domain\\User.Domain.csproj",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Domain\\User.Domain.csproj",
+              "RelativeToolTip": "User.Domain\\User.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-20T21:51:15.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "User.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\User.Application.csproj",
+              "RelativeDocumentMoniker": "User.Application\\User.Application.csproj",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Application\\User.Application.csproj",
+              "RelativeToolTip": "User.Application\\User.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-02T23:41:09.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "User.Presentation",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\User.Presentation.csproj",
+              "RelativeDocumentMoniker": "User.Presentation\\User.Presentation.csproj",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\User.Presentation.csproj",
+              "RelativeToolTip": "User.Presentation\\User.Presentation.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-02T23:35:36.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ValidationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Filters\\ValidationFilter.cs",
+              "RelativeDocumentMoniker": "User.Presentation\\Filters\\ValidationFilter.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Presentation\\Filters\\ValidationFilter.cs",
+              "RelativeToolTip": "User.Presentation\\Filters\\ValidationFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T22:05:42.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20260120215203_initialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Migrations\\20260120215203_initialCreate.cs",
+              "RelativeDocumentMoniker": "User.Infra\\Migrations\\20260120215203_initialCreate.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\PatrickDocs\\Projetos\\User.API\\User.Infra\\Migrations\\20260120215203_initialCreate.cs",
+              "RelativeToolTip": "User.Infra\\Migrations\\20260120215203_initialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T21:52:03.933Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

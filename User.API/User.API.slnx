@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/1 - Presentation/">
+    <Project Path="User.Presentation/User.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/2 - Application/">
+    <Project Path="User.Application/User.Application.csproj" />
+  </Folder>
+  <Folder Name="/3 - Domain/">
+    <Project Path="User.Domain/User.Domain.csproj" />
+  </Folder>
+  <Folder Name="/4 - Infra/">
+    <Project Path="User.Infra/User.Infra.csproj" />
+  </Folder>
+</Solution>

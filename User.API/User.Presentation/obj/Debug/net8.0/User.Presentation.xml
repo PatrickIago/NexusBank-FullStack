@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>User.Presentation</name>
+    </assembly>
+    <members>
+        <member name="T:User.API.Controllers.EnderecoController">
+            <summary>
+            Gerenciamento de endereços
+            </summary>
+        </member>
+        <member name="M:User.API.Controllers.EnderecoController.Create(User.Application.Dtos.EnderecoDtos.CreateEnderecoDto)">
+             <summary>
+             Cria um novo endereço
+             </summary>
+             <remarks>
+             <b>Observações:</b>
+             <br/>
+             - O endereço está sempre vinculado a um usuário
+             - O sistema é exclusivo para o Brasil
+            
+             <br/><br/>
+             <b>Exemplo de request:</b>
+            
+                 POST /api/enderecos
+                 {
+                    "userId": 0,
+                    "rua": "Av Brasil",
+                    "numero": "100",
+                    "cidade": "Porto Alegre",
+                    "estado": "RS"
+                 }
+             </remarks>
+             <response code="201">Endereço criado com sucesso</response>
+             <response code="400">Erro de validação</response>
+        </member>
+        <member name="M:User.API.Controllers.EnderecoController.GetById(System.Int32)">
+            <summary>
+            Retorna um endereço pelo ID
+            </summary>
+            <param name="id">ID do endereço</param>
+            <response code="200">Endereço encontrado</response>
+            <response code="404">Endereço não encontrado</response>
+        </member>
+        <member name="M:User.API.Controllers.EnderecoController.Update(User.Application.Dtos.EnderecoDtos.UpdateEnderecoDto)">
+             <summary>
+             Atualiza um endereço existente
+             </summary>
+             <remarks>
+             <b>Exemplo de request:</b>
+            
+                 PUT /api/enderecos
+                 {
+                    "id": 1,
+                    "rua": "Av Brasil",
+                    "numero": "200",
+                    "cidade": "Porto Alegre",
+                    "estado": "RS"
+                 }
+             </remarks>
+             <response code="200">Endereço atualizado com sucesso</response>
+             <response code="404">Endereço não encontrado</response>
+        </member>
+        <member name="M:User.API.Controllers.EnderecoController.Delete(System.Int32)">
+             <summary>
+             Remove um endereço pelo ID
+             </summary>
+             <remarks>
+             Exemplo:
+            
+                 DELETE /api/enderecos/1
+             </remarks>
+             <param name="id">ID do endereço</param>
+             <response code="204">Endereço removido com sucesso</response>
+             <response code="404">Endereço não encontrado</response>
+        </member>
+        <member name="M:User.API.Controllers.SuporteController.ExportarUsuariosPorEndereco(System.String)">
+            <summary>
+            Retorna todos os usuários que moram em uma determinada cidade ou estado
+            </summary>
+            <param name="endereco">Nome do endereço (Estado/Cidade) </param>
+            <response code="200">Lista de usuários encontrados</response>
+            <response code="404">Nenhum usuário encontrado</response>
+        </member>
+        <member name="M:User.API.Controllers.SuporteController.ObterTransacoesPorDocumento(System.String)">
+            <summary>
+            Retorna as transações de um usuario pelo documento
+            </summary>
+            <param name="documento">Documento do usuario (CPF/CNPJ) </param>
+            <response code="200">Transações</response>
+        </member>
+        <member name="M:User.API.Controllers.SuporteController.ObterSaldoPorDocumento(System.String)">
+            <summary>
+            Retorna o saldo de um usuario pelo documento
+            </summary>
+            <param name="documento">Documento do usuario (CPF/CNPJ) </param>
+            <response code="200">Saldo disponivel</response>
+        </member>
+        <member name="M:User.API.Controllers.SuporteController.ObterExtrato(System.Guid)">
+            <summary>
+            Retorna o extrato de uma transação
+            </summary>
+            <param name="transacaoId">Id da transação</param>
+            <response code="200">Transação</response>
+        </member>
+        <member name="M:User.API.Controllers.SuporteController.BaixarComprovante(System.Guid)">
+            <summary>
+            Exporta o extrato de uma transação em PDF
+            </summary>
+            <param name="transacaoId">Id da transação</param>
+            <response code="200">Transação</response>
+        </member>
+        <member name="T:User.API.Controllers.TransferenciasController">
+            <summary>
+            Gerenciamento de transferências entre usuários
+            </summary>
+        </member>
+        <member name="M:User.API.Controllers.TransferenciasController.Transferir(User.Application.Dtos.TransferenciasDto.TransferenciaRequestDto)">
+             <summary>
+             Realiza uma transferência entre usuários
+             </summary>
+             <remarks>
+             <b>Observações:</b>
+             <br/>
+             - O valor deve ser maior que zero
+             - Não é permitido transferir para si mesmo
+             - A chave de idempotência evita duplicidade
+            
+             <br/><br/>
+             <b>Exemplo de request:</b>
+            
+                 POST /api/transferencias
+                 {
+                    "usuarioRemetenteId": 1,
+                    "usuarioDestinatarioId": 2,
+                    "valor": 150.00,
+                    "chaveIdempotencia": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+                 }
+             </remarks>
+             <response code="200">Transferência realizada com sucesso</response>
+             <response code="400">Erro de validação</response>
+        </member>
+        <member name="T:User.API.Controllers.UsuarioController">
+            <summary>
+            Gerenciamento de usuários
+            </summary>
+        </member>
+        <member name="M:User.API.Controllers.UsuarioController.Create(User.Application.Dtos.UserDtos.CreateUserDto)">
+             <summary>
+             Cria um novo usuário
+             </summary>
+             <remarks>
+             Exemplo de request:
+            
+                 POST /api/users
+                 {
+                    "name": "teste",
+                    "email": "teste@email.com"
+                    "idade": 18
+                    "celular": "51980578892"
+                    "tipoPessoa": "pessoafisica"
+                 }
+             </remarks>
+             <response code="201">Usuário criado com sucesso</response>
+             <response code="400">Erro de validação</response>
+        </member>
+        <member name="M:User.API.Controllers.UsuarioController.GetAll">
+            <summary>
+            Retorna a lista de usuários
+            </summary>
+            <response code="200">Lista retornada com sucesso</response>
+        </member>
+        <member name="M:User.API.Controllers.UsuarioController.GetById(System.Int32)">
+            <summary>
+            Retorna um usuário pelo ID
+            </summary>
+            
+            <param name="id">ID do usuário</param>
+            <response code="200">Usuário encontrado</response>
+            <response code="404">Usuário não encontrado</response>
+        </member>
+        <member name="M:User.API.Controllers.UsuarioController.Update(System.Int32,User.Application.Dtos.UserDtos.UpdateUserDto)">
+             <summary>
+             Atualiza os dados de um usuário
+             </summary>
+             <remarks>
+             Exemplo de request:
+            
+                 PUT /api/users
+                 {
+                    "id": 1,
+                    "name": "teste atualizado",
+                    "email": "teste@email.com",
+                    "idade": 19,
+                    "celular": "51980578892",
+                    "tipoPessoa": "pessoafisica"
+                 }
+             </remarks>
+             <response code="200">Usuário atualizado com sucesso</response>
+             <response code="404">Usuário não encontrado</response>
+        </member>
+        <member name="M:User.API.Controllers.UsuarioController.Delete(System.Int32)">
+             <summary>
+             Remove um usuário pelo ID
+             </summary>
+             <remarks>
+             Para remover um usuário, é obrigatório informar o ID na rota.
+            
+             Exemplo de request:
+            
+                 DELETE /api/users/1
+            
+             </remarks>
+             <param name="id">ID do usuário que será removido</param>
+             <response code="204">Usuário removido com sucesso</response>
+             <response code="404">Usuário não encontrado</response>
+        </member>
+        <member name="M:User.API.Controllers.UsuarioController.GetPaged(System.Int32,System.Int32)">
+            <summary>
+            Retorna a lista de usuários por paginação
+            </summary>
+            <response code="200">Lista retornada com sucesso</response>
+        </member>
+    </members>
+</doc>
