@@ -1,0 +1,229 @@
+/* NEXUS COMMAND - BLUE EDITION 
+   DNA: Roxo Profundo + Azul Neon + Glassmorphism
+*/
+
+:host {
+  /* Variáveis de DNA Nexus */
+  --nu-purple-deep: #1c0028;
+  --nu-purple-glow: #3a0050;
+  --nu-blue-electric: #00d4ff; /* O Azul Neon para os botões */
+  --nu-blue-glow: rgba(0, 212, 255, 0.4);
+  --nu-glass: rgba(255, 255, 255, 0.05);
+  --nu-glass-border: rgba(255, 255, 255, 0.1);
+  --nu-text-dim: #c7a4ff;
+}
+
+/* Container Principal com Degradê Radial Imersivo */
+.nu-command-center {
+  background: radial-gradient(circle at top right, var(--nu-purple-glow) 0%, var(--nu-purple-deep) 100%);
+  min-height: 100vh;
+  color: white;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  padding-bottom: 60px;
+}
+
+/* Título e Identidade do Terminal */
+.terminal-title { 
+  font-weight: 900; 
+  letter-spacing: 6px; 
+  font-size: 3rem; 
+  margin: 0; 
+  color: white; 
+}
+
+.text-blue { 
+  color: var(--nu-blue-electric); 
+  text-shadow: 0 0 20px var(--nu-blue-glow); 
+}
+
+.terminal-subtitle { 
+  font-size: 0.8rem; 
+  letter-spacing: 3px; 
+  color: var(--nu-text-dim); 
+  text-transform: uppercase;
+}
+
+/* Cards de Módulo (Efeito de Vidro) */
+.op-card {
+  background: var(--nu-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--nu-glass-border);
+  border-radius: 24px;
+  padding: 30px;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.op-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--nu-blue-electric);
+  box-shadow: 0 20px 50px rgba(0, 212, 255, 0.2);
+}
+
+.op-header { 
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+  margin-bottom: 25px; 
+}
+
+.op-icon { 
+  font-size: 2.2rem; 
+  background: rgba(0, 212, 255, 0.1); 
+  padding: 12px; 
+  border-radius: 16px; 
+  color: var(--nu-blue-electric); 
+  box-shadow: inset 0 0 15px rgba(0, 212, 255, 0.1);
+}
+
+.op-info label { 
+  font-size: 0.7rem; 
+  font-weight: 800; 
+  color: var(--nu-blue-electric); 
+  display: block; 
+  letter-spacing: 1px;
+}
+
+.op-info h5 { 
+  margin: 0; 
+  font-weight: 700; 
+  font-size: 1.2rem; 
+  color: white; 
+}
+
+.op-body p { 
+  font-size: 0.9rem; 
+  color: var(--nu-text-dim); 
+  margin-bottom: 25px; 
+  line-height: 1.6; 
+}
+
+/* Inputs Estilizados */
+.op-input {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--nu-glass-border);
+  border-radius: 12px;
+  padding: 14px;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.op-input:focus {
+  border-color: var(--nu-blue-electric);
+  background: rgba(0, 0, 0, 0.5);
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);
+}
+
+/* Botões Azuis de Alta Performance */
+.btn-op { 
+  border: none; 
+  padding: 15px; 
+  border-radius: 14px; 
+  font-weight: 800; 
+  font-size: 0.9rem; 
+  transition: 0.4s; 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btn-blue-nexus { 
+  background: var(--nu-blue-electric); 
+  color: #0c0114; /* Contraste escuro no fundo claro */
+  box-shadow: 0 4px 20px var(--nu-blue-glow);
+}
+
+.btn-blue-nexus:hover { 
+  background: #ffffff; 
+  transform: scale(1.03);
+  box-shadow: 0 0 30px var(--nu-blue-electric);
+}
+
+/* Painel de Output (Terminal de Resultados) */
+.output-panel {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  border: 2px solid var(--nu-blue-electric);
+  overflow: hidden;
+}
+
+.output-header {
+  background: rgba(0, 212, 255, 0.15);
+  padding: 15px 30px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--nu-blue-electric);
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--nu-blue-electric);
+}
+
+.btn-close-output {
+  background: transparent;
+  border: none;
+  color: var(--nu-blue-electric);
+  font-weight: 900;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.btn-close-output:hover { opacity: 1; }
+
+.output-content { padding: 40px; }
+
+/* Tabela de Transações Nexus Mode */
+.table-dark {
+  background: transparent !important;
+  color: white;
+}
+
+.table-dark thead th {
+  color: var(--nu-blue-electric);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--nu-glass-border);
+}
+
+.table-dark td {
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: middle;
+}
+
+.btn-pdf-mini {
+  background: transparent;
+  border: 1px solid var(--nu-blue-electric);
+  color: var(--nu-blue-electric);
+  padding: 5px 15px;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+.btn-pdf-mini:hover {
+  background: var(--nu-blue-electric);
+  color: #0c0114;
+}
+
+.text-blue-light { 
+  color: var(--nu-blue-electric); 
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+/* Animação de Entrada */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

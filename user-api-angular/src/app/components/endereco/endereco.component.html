@@ -1,0 +1,81 @@
+<div class="nu-container">
+  <header class="nu-header">
+    <div class="header-titles">
+      <span class="nu-label">Gestão Especializada</span>
+      <h1 class="nu-title">📍 Endereços de Clientes</h1>
+    </div>
+    <div class="header-actions">
+      <div class="nu-search-box">
+        <input type="number" [(ngModel)]="idBusca" placeholder="Pesquisar ID do Endereço (ex: 1)" (keyup.enter)="buscarPorId()">
+        <button class="btn-icon-search" (click)="buscarPorId()" title="Buscar">🔍</button>
+      </div>
+      <button class="btn-nu-prime" (click)="novoEndereco()">
+        <span class="icon">+</span> Novo Cadastro
+      </button>
+    </div>
+  </header>
+
+  <div class="nu-main-panel" *ngIf="exibirForm || enderecoSelecionado">
+    
+    <div class="nu-card nu-status-card" *ngIf="enderecoSelecionado?.id">
+      <div class="status-info">
+        <div class="nu-avatar-large">📍</div>
+        <div class="text-info">
+          <h3>Edição de Registro</h3>
+          <p>ID do Endereço: <strong>{{ enderecoSelecionado?.id }}</strong></p>
+          <p>Pertence ao Cliente ID: <strong>{{ enderecoSelecionado?.usuarioId }}</strong></p>
+        </div>
+      </div>
+      <div class="status-actions">
+        <button class="btn-nu-danger" (click)="deletar(enderecoSelecionado!.id!)">
+          🗑️ Excluir Permanentemente
+        </button>
+      </div>
+    </div>
+
+    <div class="nu-card nu-form-card">
+      <header class="card-header-form">
+        <h2>{{ enderecoSelecionado?.id ? '✏️ Atualizar Dados' : '✨ Novo Cadastro de Endereço' }}</h2>
+        <button class="btn-close-form" (click)="fecharTela()" title="Fechar">✕</button>
+      </header>
+
+      <div class="nu-form-grid">
+        <div class="nu-input-group full-width">
+          <label>Logradouro / Rua</label>
+          <input [(ngModel)]="enderecoSelecionado!.rua" placeholder="Ex: Rua Cairu">
+        </div>
+        <div class="nu-input-group">
+          <label>Número</label>
+          <input [(ngModel)]="enderecoSelecionado!.numero" placeholder="Ex: 44">
+        </div>
+        <div class="nu-input-group">
+          <label>Cidade</label>
+          <input [(ngModel)]="enderecoSelecionado!.cidade" placeholder="Ex: Canoas">
+        </div>
+        <div class="nu-input-group">
+          <label>Estado (UF)</label>
+          <input [(ngModel)]="enderecoSelecionado!.estado" placeholder="Ex: Rio Grande do Sul">
+        </div>
+        <div class="nu-input-group">
+          <label>ID do Cliente (Vínculo)</label>
+          <input type="number" [(ngModel)]="enderecoSelecionado!.usuarioId" placeholder="Ex: 1">
+        </div>
+      </div>
+
+      <div class="nu-form-actions">
+        <button class="btn-nu-secundary" (click)="fecharTela()">Cancelar</button>
+        <button class="btn-nu-save" (click)="salvar()">
+          {{ enderecoSelecionado?.id ? '💾 Salvar Alterações' : '➕ Confirmar Cadastro' }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="nu-empty-panel" *ngIf="!exibirForm && !enderecoSelecionado">
+    <div class="empty-content">
+      <div class="nu-avatar-huge">📍</div>
+      <h2>Painel de Gestão Direta</h2>
+      <p>A listagem geral foi desabilitada. Para gerenciar um endereço, utilize a barra de pesquisa acima inserindo o <strong>ID do registro</strong> ou inicie um <strong>novo cadastro</strong>.</p>
+    </div>
+  </div>
+</div>

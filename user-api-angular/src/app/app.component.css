@@ -1,0 +1,120 @@
+:root {
+  --nu-purple: #8a05be;
+  --nu-purple-dark: #5f0281;
+  --nu-bg: #f5f1f0;
+}
+
+/* Navbar */
+.nu-navbar {
+  background: linear-gradient(90deg, #8a05be 0%, #5f0281 100%);
+  color: white;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.nu-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nu-brand { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+}
+
+.nu-logo { 
+    background: white; 
+    color: #8a05be; 
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; 
+    font-weight: 900; 
+    font-size: 1.2rem;
+}
+
+.nu-brand-name {
+    font-size: 1.4rem;
+    letter-spacing: -0.5px;
+}
+
+.nu-nav { display: flex; gap: 8px; }
+
+.nu-link {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nu-link:hover { 
+    background: rgba(255,255,255,0.15); 
+    color: white; 
+}
+
+.nu-link.active { 
+    background: rgba(255,255,255,0.25); 
+    color: white; 
+    font-weight: 500;
+}
+
+.nu-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-left: 1px solid rgba(255,255,255,0.2);
+  padding-left: 20px;
+}
+
+.user-text {
+    text-align: right;
+    line-height: 1.2;
+}
+
+.user-text span {
+    font-size: 0.85rem;
+}
+
+.nu-avatar-small {
+  width: 42px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nu-avatar-small:hover {
+  background-color: white;
+  color: #8a05be;
+  transform: scale(1.1);
+}
+
+.main-content {
+  background-color: var(--nu-bg);
+  min-height: calc(100vh - 75px);
+  padding: 40px 0;
+}

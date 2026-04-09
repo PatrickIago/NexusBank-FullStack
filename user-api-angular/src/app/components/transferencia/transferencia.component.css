@@ -1,0 +1,318 @@
+/* --- Variáveis Globais do Componente --- */
+:host {
+  --nu-purple: #8a05be;
+  --nu-purple-dark: #5f0281;
+  --nu-purple-light: #f3e8ff;
+  --nu-bg: #f5f1f0;
+  --nu-text-dark: #111;
+  --nu-text-gray: #718096;
+  --nu-white: #ffffff;
+}
+
+/* --- Layout Principal --- */
+.nu-container {
+  max-width: 600px; /* Mais estreito para parecer um app mobile/bank */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nu-main-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* --- Cartão de Simulação --- */
+.nu-card {
+  background: var(--nu-white);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.card-header-form {
+  margin-bottom: 25px;
+}
+
+.card-header-form h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--nu-text-dark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge-beta {
+  font-size: 0.65rem;
+  background: var(--nu-purple-light);
+  color: var(--nu-purple);
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- Grid de Formulário --- */
+.nu-form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nu-input-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--nu-text-gray);
+  margin-bottom: 8px;
+  margin-left: 4px;
+}
+
+/* --- Estilo dos Inputs de Busca (Autocomplete) --- */
+.autocomplete-container {
+  position: relative;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  padding: 4px 16px;
+  transition: all 0.3s ease;
+}
+
+.search-input-wrapper:focus-within {
+  background: var(--nu-white);
+  border-color: var(--nu-purple);
+  box-shadow: 0 0 0 4px rgba(138, 5, 190, 0.1);
+}
+
+.nu-search-input {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+  color: var(--nu-text-dark);
+}
+
+.search-icon {
+  margin-right: 12px;
+  font-size: 1.1rem;
+}
+
+/* --- Lista Suspensa (Dropdown) --- */
+.nu-dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--nu-white);
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+  margin-top: 8px;
+  padding: 8px 0;
+  list-style: none;
+  z-index: 1000;
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid #f0f0f0;
+}
+
+.nu-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nu-dropdown-item:hover {
+  background: var(--nu-purple-light);
+}
+
+.item-avatar {
+  width: 38px;
+  height: 38px;
+  background: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #475569;
+}
+
+.item-avatar.purple {
+  background: var(--nu-purple);
+  color: white;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--nu-text-dark);
+}
+
+.item-doc {
+  font-size: 0.75rem;
+  color: var(--nu-text-gray);
+}
+
+/* --- Divisor e Setas --- */
+.transfer-arrow {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--nu-purple);
+  margin: -5px 0;
+  filter: grayscale(1);
+  opacity: 0.4;
+}
+
+/* --- Seção de Valor --- */
+.valor-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #eee;
+  margin-top: 10px;
+}
+
+.currency {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--nu-purple);
+  margin-right: 12px;
+}
+
+.input-valor {
+  border: none;
+  background: transparent;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--nu-text-dark);
+  width: 100%;
+  max-width: 250px;
+  outline: none;
+  text-align: left;
+}
+
+/* --- Botão de Ação --- */
+.btn-nu-prime {
+  width: 100%;
+  background: var(--nu-purple);
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 25px;
+  box-shadow: 0 4px 15px rgba(138, 5, 190, 0.2);
+}
+
+.btn-nu-prime:hover:not(:disabled) {
+  background: var(--nu-purple-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(138, 5, 190, 0.3);
+}
+
+.btn-nu-prime:disabled {
+  background: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* --- Comprovante (Recibo) --- */
+.comprovante-card {
+  text-align: center;
+  border-top: 10px solid #22c55e;
+  animation: slideUp 0.4s ease-out;
+}
+
+.nu-avatar-large {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.info-row:last-of-type {
+  border-bottom: none;
+}
+
+.text-purple {
+  color: var(--nu-purple);
+  font-weight: 800;
+}
+
+.id-transacao small {
+  font-size: 0.65rem;
+  color: var(--nu-text-gray);
+  word-break: break-all;
+}
+
+/* --- Animações --- */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scrollbar Customizada para as Listas */
+.nu-dropdown-list::-webkit-scrollbar {
+  width: 6px;
+}
+.nu-dropdown-list::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+
+/* Ajuste para inputs Chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: text-bottom;
+  border: 0.2em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border .75s linear infinite;
+}
+
+@keyframes spinner-border {
+  to { transform: rotate(360deg); }
+}
+
+.ms-2 { margin-left: 0.5rem; }
+
+/* Para deixar o botão desabilitado com cara de bloqueado */
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}

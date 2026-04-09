@@ -1,0 +1,39 @@
+<header class="nu-navbar">
+  <div class="nu-container">
+    
+    <div class="nu-brand" routerLink="/dashboard" style="cursor: pointer;">
+      <div class="nu-logo">N</div>
+      <span class="nu-brand-name">Nexus<strong>Bank</strong></span>
+    </div>
+
+    <nav class="nu-nav">
+      <a routerLink="/dashboard" routerLinkActive="active" class="nu-link">
+        <span class="nu-icon">📊</span> Dashboard
+      </a>
+      <a routerLink="/usuarios" routerLinkActive="active" class="nu-link">
+        <span class="nu-icon">👥</span> Clientes
+      </a>
+      <a routerLink="/enderecos" routerLinkActive="active" class="nu-link">
+        <span class="nu-icon">📍</span> Endereços
+      </a>
+      <a routerLink="/transferencias" routerLinkActive="active" class="nu-link">
+         <span class="nu-icon">💸</span> Pix
+      </a>
+      <a routerLink="/suporte" routerLinkActive="active" class="nu-link">
+        <span class="nu-icon">🛠️</span> Suporte
+      </a>
+    </nav>
+
+    <div class="nu-user-profile">
+      <div class="user-text">
+        <span>Olá, <strong>Administrador</strong></span>
+      </div>
+      <div class="nu-avatar-small">A</div>
+    </div>
+
+  </div>
+</header>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>

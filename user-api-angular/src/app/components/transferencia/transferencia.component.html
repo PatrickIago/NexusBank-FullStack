@@ -1,0 +1,69 @@
+<div class="nu-container">
+  <div class="nu-main-panel">
+    
+    <div class="nu-card shadow-lg" *ngIf="!comprovante">
+      <div class="card-header-form">
+        <h2>NexusPix <span class="badge-beta">Simulador</span></h2>
+      </div>
+
+      <div class="nu-form-grid">
+        <div class="nu-input-group autocomplete-container">
+          <label>De (Remetente)</label>
+          <div class="search-input-wrapper">
+            <span class="search-icon">📤</span>
+            <input type="text" [(ngModel)]="buscaOrigem" (input)="filtrarOrigem()" (focus)="showOrigem = true" placeholder="Quem vai enviar?" class="nu-search-input" [disabled]="carregando">
+          </div>
+          <ul class="nu-dropdown-list shadow-xl" *ngIf="showOrigem && filtradosOrigem.length > 0">
+            <li *ngFor="let user of filtradosOrigem" (click)="selecionarOrigem(user)" class="nu-dropdown-item">
+              <div class="item-avatar purple">{{ user.nome.substring(0,1) }}</div>
+              <div class="item-info">
+                <span class="item-name">{{ user.nome }}</span>
+                <span class="item-doc">Documento: {{ user.documento }}</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="transfer-arrow">⬇️</div>
+
+        <div class="nu-input-group autocomplete-container">
+          <label>Para (Destinatário)</label>
+          <div class="search-input-wrapper">
+            <span class="search-icon">📥</span>
+            <input type="text" [(ngModel)]="buscaDestino" (input)="filtrarDestino()" (focus)="showDestino = true" placeholder="Quem vai receber?" class="nu-search-input" [disabled]="carregando">
+          </div>
+          <ul class="nu-dropdown-list shadow-xl" *ngIf="showDestino && filtradosDestino.length > 0">
+            <li *ngFor="let user of filtradosDestino" (click)="selecionarDestino(user)" class="nu-dropdown-item">
+              <div class="item-avatar">{{ user.nome.substring(0,1) }}</div>
+              <div class="item-info">
+                <span class="item-name">{{ user.nome }}</span>
+                <span class="item-doc">CPF/CNPJ: {{ user.documento }}</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nu-input-group">
+          <label>Qual o valor?</label>
+          <div class="valor-input-wrapper">
+            <span class="currency">R$</span>
+            <input type="number" [(ngModel)]="request.valor" placeholder="0" class="input-valor" [disabled]="carregando">
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-nu-prime big-btn" [disabled]="carregando || !request.usuarioRemetenteId || !request.usuarioDestinatarioId || !request.valor" (click)="confirmarEnvio()">
+        <span *ngIf="!carregando">Realizar Transferência 🚀</span>
+        <div *ngIf="carregando" class="spinner-border spinner-border-sm" role="status">
+          <span class="visually-hidden">Enviando...</span>
+        </div>
+        <span *ngIf="carregando" class="ms-2">Processando...</span>
+      </button>
+    </div>
+
+    <div class="nu-card shadow-lg comprovante-card" *ngIf="comprovante">
+       <button class="btn-nu-prime" (click)="novaTransferencia()">Nova Transferência</button>
+    </div>
+
+  </div>
+</div>

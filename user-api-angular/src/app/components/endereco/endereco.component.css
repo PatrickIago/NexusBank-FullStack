@@ -1,0 +1,237 @@
+/* CONTAINER PRINCIPAL COM DEGRADÊ NUBANK */
+.nu-container {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  /* Degradê que começa roxo suave e funde com o cinza claro do NexusBank */
+  background: linear-gradient(180deg, rgba(138, 5, 190, 0.12) 0%, rgba(245, 241, 240, 1) 450px);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* CENTRALIZAÇÃO DOS ELEMENTOS */
+.nu-header, .nu-main-panel, .nu-empty-panel {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CABEÇALHO (NAVBAR INTERNA) */
+.nu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px); /* Efeito de vidro */
+  padding: 20px 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+}
+
+.nu-label { 
+  font-size: 11px; 
+  color: #999; 
+  text-transform: uppercase; 
+  letter-spacing: 1.5px; 
+  font-weight: 600;
+}
+
+.nu-title { 
+  color: #8a05be; 
+  font-weight: 800; 
+  margin: 4px 0 0; 
+  font-size: 1.6rem; 
+}
+
+.header-actions { display: flex; gap: 15px; align-items: center; }
+
+/* BARRA DE PESQUISA ESTILO PÍLULA */
+.nu-search-box {
+  display: flex;
+  background: #fff;
+  border-radius: 25px;
+  padding: 4px 8px;
+  border: 1.5px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.nu-search-box:focus-within {
+  border-color: #8a05be;
+  box-shadow: 0 0 0 4px rgba(138, 5, 190, 0.1);
+}
+
+.nu-search-box input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 8px 15px;
+  width: 180px;
+  font-size: 14px;
+  color: #333;
+}
+
+.btn-icon-search {
+  border: none;
+  background: #f4f1f0;
+  cursor: pointer;
+  color: #8a05be;
+  font-size: 1rem;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.btn-icon-search:hover { background: #e8e0fd; }
+
+/* BOTÕES */
+.btn-nu-prime {
+  background: #8a05be;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-nu-prime:hover { background: #5f0281; transform: translateY(-1px); }
+
+.btn-nu-save {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-nu-save:hover { background: #16a34a; box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3); }
+
+.btn-nu-danger {
+  background: transparent;
+  color: #ef4444;
+  border: 1.5px solid #ef4444;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-nu-danger:hover { background: #ef4444; color: white; }
+
+.btn-nu-secundary {
+  background: #f0f0f0;
+  color: #666;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* CARDS */
+.nu-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+  margin-bottom: 15px;
+}
+
+/* CARD DE STATUS */
+.nu-status-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 6px solid #8a05be;
+}
+
+.status-info { display: flex; gap: 20px; align-items: center; }
+
+.nu-avatar-large {
+  background: #f9f7fb;
+  color: #8a05be;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: inset 0 0 0 1px rgba(138, 5, 190, 0.1);
+}
+
+/* FORMULÁRIO */
+.nu-form-card { border-top: 6px solid #22c55e; }
+
+.card-header-form { display: flex; justify-content: space-between; margin-bottom: 25px; }
+
+.nu-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.full-width { grid-column: span 2; }
+
+.nu-input-group { display: flex; flex-direction: column; gap: 8px; }
+
+.nu-input-group label {
+  font-size: 11px;
+  color: #8a05be;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.nu-input-group input {
+  padding: 14px;
+  border: 1.5px solid #eee;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #fafafa;
+  transition: 0.3s;
+}
+
+.nu-input-group input:focus {
+  border-color: #8a05be;
+  background: #fff;
+  outline: none;
+}
+
+.nu-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* ESTADO VAZIO (BOAS VINDAS) */
+.nu-empty-panel {
+  text-align: center;
+  padding: 100px 40px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px dashed rgba(138, 5, 190, 0.2);
+  border-radius: 20px;
+}
+
+.nu-avatar-huge { font-size: 70px; margin-bottom: 20px; opacity: 0.8; }
+
+.nu-empty-panel h2 { color: #333; margin-bottom: 10px; }
+.nu-empty-panel p { color: #777; max-width: 400px; margin: 0 auto; line-height: 1.5; }

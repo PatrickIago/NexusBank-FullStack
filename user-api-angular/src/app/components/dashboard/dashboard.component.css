@@ -1,0 +1,265 @@
+/* --- FUNDO E ESTRUTURA GLOBAL (MAIS ROXO) --- */
+.dashboard-wrapper {
+  padding: 60px 40px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  /* Aumentei a opacidade do roxo de 0.08 para 0.15 para preencher mais a tela */
+  background: 
+    radial-gradient(circle at 10% 10%, rgba(138, 5, 190, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(34, 197, 94, 0.05) 0%, transparent 40%),
+    #f8f9fa; /* Fundo base ligeiramente mais claro para destacar o roxo */
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: #1a1a1a;
+}
+
+/* --- HEADER DINÂMICO --- */
+.nu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  animation: slideDown 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.welcome-text h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  /* Degradê de texto mais intenso no roxo */
+  background: linear-gradient(to right, #111 20%, #8a05be 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.welcome-text p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+/* BOTÃO ATUALIZAR (INTERATIVO) */
+.btn-refresh {
+  background: white;
+  border: 1.5px solid #eee;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.btn-refresh:hover {
+  background: #8a05be;
+  color: white;
+  border-color: #8a05be;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(138, 5, 190, 0.15);
+}
+
+.btn-refresh:active .icon {
+  animation: spin 0.8s ease-in-out;
+}
+
+/* --- GRID DE CARDS COM EFEITO FOCO --- */
+.nu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.nu-grid:hover .nu-card:not(:hover) {
+  opacity: 0.6; /* Suavizei o blur para não cansar a vista */
+  transform: scale(0.98);
+  filter: blur(0.5px);
+}
+
+.nu-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.02);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.nu-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 30px 60px rgba(138, 5, 190, 0.12);
+  border-color: rgba(138, 5, 190, 0.2);
+}
+
+.nu-card.highlight { border-left: 8px solid #8a05be; }
+
+.card-label {
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.card-value {
+  font-size: 4.5rem;
+  font-weight: 950;
+  line-height: 1;
+  margin: 15px 0;
+  letter-spacing: -3px;
+  color: #000;
+}
+
+/* --- BARRAS DE PROGRESSO NEON --- */
+.progress-container {
+  height: 12px;
+  background: #eee;
+  border-radius: 20px;
+  margin-top: 25px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.progress-bar.pj { background: linear-gradient(90deg, #8a05be, #ff00ea); box-shadow: 0 0 15px rgba(138, 5, 190, 0.3); }
+.progress-bar.pf { background: linear-gradient(90deg, #22c55e, #4ade80); box-shadow: 0 0 15px rgba(34, 197, 94, 0.3); }
+
+/* --- SEÇÃO DE CLIENTES (CARD ÚNICO POR LINHA) --- */
+.nu-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.6); /* Mais transparente para ver o fundo roxo */
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+.section-header h3 { font-size: 1.6rem; font-weight: 900; color: #333; letter-spacing: -0.5px; }
+
+/* AJUSTE DO VER TODOS CLIENTES */
+.btn-link {
+  color: #8a05be;
+  background: #f3e8ff; /* Fundo roxo muito claro */
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+  text-decoration: none; /* Se for um <a> tag */
+  display: inline-block;
+}
+
+.btn-link:hover {
+  background: #e8d0ff; /* Escurece levemente no hover */
+  transform: translateY(-2px);
+}
+
+.nu-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+.nu-table th { padding: 15px 25px; color: #bbb; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
+
+.nu-table tbody tr {
+  background: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nu-table tbody tr:hover {
+  transform: scale(1.015) translateX(5px);
+  box-shadow: 0 10px 30px rgba(138, 5, 190, 0.06); /* Sombra roxa sutil no hover */
+}
+
+.nu-table td { padding: 25px; border: none; font-size: 0.95rem; color: #444; }
+.nu-table td:first-child { border-radius: 20px 0 0 20px; }
+.nu-table td:last-child { border-radius: 0 20px 20px 0; }
+
+/* AJUSTE DO AVATAR (AGORA ROXO) */
+.avatar {
+  /* Gradiente roxo premium */
+  background: linear-gradient(135deg, #8a05be 0%, #5f0281 100%);
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px; /* Squircle ligeiramente mais arredondado */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 15px rgba(138, 5, 190, 0.15);
+}
+
+.user-info strong { color: #222; font-size: 1rem; }
+.user-info small { color: #888; }
+
+.tag {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.tag.pj { background: #f3e8ff; color: #8a05be; }
+.tag.pf { background: #dcfce7; color: #16a34a; }
+
+/* STATUS COM PULSO GREEN */
+.status-active {
+  color: #16a34a;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-active::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #16a34a;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+/* --- ANIMAÇÕES --- */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(22, 163, 74, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
+}

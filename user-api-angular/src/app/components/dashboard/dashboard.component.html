@@ -1,0 +1,80 @@
+<div class="dashboard-wrapper">
+  
+  <header class="nu-header">
+    <div class="welcome-text">
+      <h1>Olá, Administrador</h1>
+      <p>Confira o resumo da sua agência digital.</p>
+    </div>
+    <button class="btn-refresh" (click)="carregarDados()">
+      <span class="icon">🔄</span> Atualizar Dados
+    </button>
+  </header>
+
+  <div class="nu-grid">
+    
+    <div class="nu-card">
+      <span class="card-label">Total de Clientes</span>
+      <h2 class="card-value">{{ usuarios.length }}</h2>
+      <span class="card-footer">Clientes ativos na base</span>
+    </div>
+
+    <div class="nu-card highlight">
+      <span class="card-label">Contas PJ</span>
+      <h2 class="card-value">{{ totalPJ }}</h2>
+      <div class="progress-container">
+        <div class="progress-bar pj" [style.width.%]="(totalPJ / usuarios.length) * 100 || 0"></div>
+      </div>
+    </div>
+
+    <div class="nu-card">
+      <span class="card-label">Contas PF</span>
+      <h2 class="card-value">{{ totalPF }}</h2>
+      <div class="progress-container">
+        <div class="progress-bar pf" [style.width.%]="(totalPF / usuarios.length) * 100 || 0"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="nu-section">
+    <div class="section-header">
+      <h3>Últimos Clientes Cadastrados</h3>
+      <button routerLink="/usuarios" class="btn-link">Ver todos os clientes →</button>
+    </div>
+
+    <div class="table-container">
+      <table class="nu-table">
+        <thead>
+          <tr>
+            <th>Cliente</th>
+            <th>Documento</th>
+            <th>Tipo</th>
+            <th>Cidade</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of usuarios.slice(-5).reverse()">
+            <td>
+              <div class="user-info">
+                <div class="avatar">{{ user.nome[0] }}</div>
+                <div class="details">
+                  <strong>{{ user.nome }}</strong>
+                  <small>{{ user.email }}</small>
+                </div>
+              </div>
+            </td>
+            <td><code>{{ user.documento }}</code></td>
+            <td>
+            <span class="tag" [ngClass]="user.tipoPessoa?.toUpperCase() === 'PESSOAJURIDICA' ? 'pj' : 'pf'">
+                      {{ formatarTipo(user.tipoPessoa) }}
+            </span>
+            </td>
+            <td>{{ user.endereco?.cidade }}</td>
+            <td><span class="status-active">Ativo</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>

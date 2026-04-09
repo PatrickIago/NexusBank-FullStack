@@ -1,0 +1,105 @@
+<div class="nu-command-center">
+  <div class="container py-5">
+    
+    <div class="mb-5 text-center">
+      <h1 class="terminal-title">NEXUS<span class="text-purple">COMMAND</span></h1>
+      <p class="terminal-subtitle">OPERATIONS CONTROL CENTER v2.0</p>
+    </div>
+
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <div class="op-card">
+          <div class="op-header">
+            <span class="op-icon">💰</span>
+            <div class="op-info">
+              <label>MÓDULO 01</label>
+              <h5>Saldo em Tempo Real</h5>
+            </div>
+          </div>
+          <div class="op-body">
+            <p>Verifique a posição consolidada de qualquer conta ativa no sistema.</p>
+            <input type="text" [(ngModel)]="documentoBusca" placeholder="CPF/CNPJ do Cliente" class="op-input">
+            <button class="btn-op btn-purple w-100" (click)="buscarSaldo()">EXECUTAR CONSULTA</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="op-card">
+          <div class="op-header">
+            <span class="op-icon">📜</span>
+            <div class="op-info">
+              <label>MÓDULO 02</label>
+              <h5>Histórico de Transações</h5>
+            </div>
+          </div>
+          <div class="op-body">
+            <p>Gere o extrato completo e visualize comprovantes individuais.</p>
+            <input type="text" [(ngModel)]="documentoBusca" placeholder="CPF/CNPJ do Cliente" class="op-input">
+            <button class="btn-op btn-blue w-100" (click)="buscarHistorico()">GERAR RELATÓRIO</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="op-card">
+          <div class="op-header">
+            <span class="op-icon">📍</span>
+            <div class="op-info">
+              <label>MÓDULO 03</label>
+              <h5>Exportação Regional</h5>
+            </div>
+          </div>
+          <div class="op-body">
+            <p>Exporte a base de usuários por cidade/estado em formato CSV.</p>
+            <input type="text" [(ngModel)]="cidadeBusca" placeholder="Cidade ou Estado" class="op-input">
+            <button class="btn-op btn-green w-100" (click)="exportarCsv()">BAIXAR BASE CSV</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-5 animate-fade-in" *ngIf="saldoResultado || transacoes.length > 0">
+      <div class="output-panel shadow-lg">
+        <div class="output-header d-flex justify-content-between">
+          <span>>_ RESULTADO DA OPERAÇÃO</span>
+          <button class="btn-close-output" (click)="limparResultados()">FECHAR [X]</button>
+        </div>
+        
+        <div class="output-content">
+          <div *ngIf="saldoResultado" class="text-center py-4">
+            <small class="text-muted d-block mb-2">POSIÇÃO FINANCEIRA</small>
+            <h1 class="display-3 fw-bold text-white">R$ {{ saldoResultado.saldo | number:'1.2-2' }}</h1>
+            <p class="text-purple-light">{{ saldoResultado.mensagem }}</p>
+          </div>
+
+          <div *ngIf="transacoes.length > 0">
+            <table class="table table-dark table-hover m-0">
+              <thead>
+                <tr>
+                  <th>DATA</th>
+                  <th>BENEFICIÁRIO</th>
+                  <th>VALOR</th>
+                  <th class="text-center">AÇÕES</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let t of transacoes">
+                  <td class="text-muted">{{ t.dataHora | date:'dd/MM HH:mm' }}</td>
+                  <td>{{ t.destinatario }}</td>
+                  <td class="text-success fw-bold">R$ {{ t.valor | number:'1.2-2' }}</td>
+                  <td class="text-center">
+                    <button class="btn-pdf-mini" (click)="downloadPdf(t.transacaoId)">PDF</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

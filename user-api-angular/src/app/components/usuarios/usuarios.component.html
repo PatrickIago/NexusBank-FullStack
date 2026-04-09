@@ -1,0 +1,103 @@
+<div class="nu-container">
+  <header class="nu-header">
+    <div class="header-titles">
+      <span class="nu-label">Administração</span>
+      <h1 class="nu-title">👥 Gestão de Clientes</h1>
+    </div>
+    <div class="header-actions">
+      <div class="nu-search-box">
+        <input type="text" [(ngModel)]="filtroDocumento" (input)="filtrarPorDocumento()" placeholder="Buscar por documento...">
+        <button class="btn-icon-search">🔍</button>
+      </div>
+      <button class="btn-nu-prime" (click)="novoUsuario()">
+        <span>+</span> Novo Cliente
+      </button>
+    </div>
+  </header>
+
+  <div class="nu-card form-card" *ngIf="exibirForm">
+    <div class="card-header-form">
+      <h2>{{ usuarioSelecionado.id ? '✏️ Editar Registro' : '✨ Novo Cadastro' }}</h2>
+      <button class="btn-close" (click)="exibirForm = false">✕</button>
+    </div>
+
+    <div class="nu-form-grid">
+      <div class="nu-input-group full-width">
+        <label>Nome Completo</label>
+        <input [(ngModel)]="usuarioSelecionado.nome" placeholder="Ex: Patrick Mendes">
+      </div>
+      
+      <div class="nu-input-group">
+        <label>E-mail Corporativo</label>
+        <input [(ngModel)]="usuarioSelecionado.email" placeholder="email@nexusbank.com">
+      </div>
+
+      <div class="nu-input-group">
+        <label>Documento (CPF/CNPJ)</label>
+        <input [(ngModel)]="usuarioSelecionado.documento" placeholder="000.000.000-00">
+      </div>
+
+      <div class="nu-input-group">
+        <label>Tipo de Conta</label>
+        <select [(ngModel)]="usuarioSelecionado.tipoPessoa" class="nu-select">
+          <option [value]="1">Pessoa Física (PF)</option>
+          <option [value]="2">Pessoa Jurídica (PJ)</option>
+        </select>
+      </div>
+
+      <div class="nu-input-group">
+        <label>Celular / WhatsApp</label>
+        <input [(ngModel)]="usuarioSelecionado.celular" placeholder="(00) 00000-0000">
+      </div>
+
+      <ng-container *ngIf="!usuarioSelecionado.id">
+        <div class="nu-input-group">
+          <label>Rua</label>
+          <input [(ngModel)]="usuarioSelecionado.endereco.rua" placeholder="Logradouro">
+        </div>
+        <div class="nu-input-group">
+          <label>Número</label>
+          <input [(ngModel)]="usuarioSelecionado.endereco.numero" placeholder="Nº">
+        </div>
+      </ng-container>
+    </div>
+
+    <div class="nu-form-actions">
+      <button class="btn-nu-secundary" (click)="exibirForm = false">Cancelar</button>
+      <button class="btn-nu-save" (click)="salvar()">Confirmar Cadastro</button>
+    </div>
+  </div>
+
+  <div class="nu-list-container">
+    <div class="nu-list-header">
+      <span>Cliente</span>
+      <span>Documento</span>
+      <span style="text-align: center;">Ações</span>
+    </div>
+
+    <div class="nu-user-row" *ngFor="let user of usuariosFiltrados">
+      <div class="user-main-info">
+        <div class="avatar-circle">{{ user.nome[0] }}</div>
+        <div class="user-text">
+          <strong>{{ user.nome }}</strong>
+          <small>{{ user.email }}</small>
+        </div>
+      </div>
+      
+      <div class="user-doc">
+        <code>{{ user.documento }}</code>
+      </div>
+
+      <div class="user-actions">
+        <button class="btn-action edit" (click)="editar(user)" title="Editar">✏️</button>
+        <button class="btn-action delete" (click)="deletar(user.id)" title="Excluir">🗑️</button>
+      </div>
+    </div>
+
+    <div class="nu-empty-panel" *ngIf="usuariosFiltrados.length === 0">
+      <div class="nu-avatar-huge">🔍</div>
+      <h2>Nenhum cliente encontrado</h2>
+      <p>Tente ajustar o filtro ou cadastre um novo cliente no botão acima.</p>
+    </div>
+  </div>
+</div>
