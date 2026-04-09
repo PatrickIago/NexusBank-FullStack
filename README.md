@@ -22,5 +22,3 @@ O projeto está totalmente "dockerizado", permitindo subir todo o ambiente (Banc
 
 ```bash
 docker-compose up -d
-
-📦 Estrutura da API (Endpoints)A API do NexusBank é dividida em áreas estratégicas para garantir a segurança e a rastreabilidade das operações.RecursoMétodoRotaDescriçãoTransferênciaPOST/api/Transferencias[CREATE] Realiza um novo Pix (Valida saldo e destino).GET/api/Transferencias[READ ALL] Lista todas as transações do banco.SuporteGET/api/Suporte/saldo[READ] Consulta posição consolidada por documento.GET/api/Suporte/transacoes[READ] Obtém histórico completo de um cliente.GET/api/Suporte/comprovante-pdf[FILE] Gera comprovante de transação em PDF.GET/api/Suporte/exportar-usuarios[FILE] Exporta base regional de usuários em CSV.UsuárioPOST/api/Usuario[CREATE] Cadastra um novo cliente no sistema.GET/api/Usuario/{id}[READ ONE] Retorna dados detalhados do perfil.PUT/api/Usuario/{id}[UPDATE] Atualiza informações cadastrais.EndereçoPOST/api/Endereco[CREATE] Vincula endereço ao perfil do usuário.
