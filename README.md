@@ -22,3 +22,47 @@ O projeto está totalmente "dockerizado", permitindo subir todo o ambiente (Banc
 
 ```bash
 docker-compose up -d
+
+## 📦 Estrutura da API (Endpoints)
+
+A API do **NexusBank** é dividida em áreas estratégicas para garantir segurança, organização e rastreabilidade das operações.
+
+---
+
+### 🔄 Transferências
+
+| Método | Rota                  | Descrição |
+|--------|-----------------------|----------|
+| POST   | /api/Transferencias   | [CREATE] Realiza um novo Pix (valida saldo e destino) |
+| GET    | /api/Transferencias   | [READ ALL] Lista todas as transações do banco |
+
+---
+
+### 🛠️ Suporte
+
+| Método | Rota                                | Descrição |
+|--------|-------------------------------------|----------|
+| GET    | /api/Suporte/saldo                  | [READ] Consulta posição consolidada por documento |
+| GET    | /api/Suporte/transacoes             | [READ] Obtém histórico completo de um cliente |
+| GET    | /api/Suporte/comprovante-pdf        | [FILE] Gera comprovante de transação em PDF |
+| GET    | /api/Suporte/exportar-usuarios      | [FILE] Exporta base regional de usuários em CSV |
+
+---
+
+### 👤 Usuário
+
+| Método | Rota                   | Descrição |
+|--------|------------------------|----------|
+| POST   | /api/Usuario           | [CREATE] Cadastra um novo cliente no sistema |
+| GET    | /api/Usuario/{id}      | [READ ONE] Retorna dados detalhados do perfil |
+| PUT    | /api/Usuario/{id}      | [UPDATE] Atualiza informações cadastrais |
+
+---
+
+### 📍 Endereço
+
+| Método | Rota           | Descrição |
+|--------|----------------|----------|
+| POST   | /api/Endereco  | [CREATE] Vincula endereço ao perfil do usuário |
+
+---
